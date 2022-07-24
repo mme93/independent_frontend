@@ -7,6 +7,9 @@ import { IonicModule } from '@ionic/angular';
 import { AccountPageRoutingModule } from './account-routing.module';
 
 import { AccountPage } from './account.page';
+import {ResetComponent} from './reset/reset.component';
+import {LoginComponent} from './login/login.component';
+import {RegistryComponent} from './registry/registry.component';
 
 @NgModule({
   imports: [
@@ -15,6 +18,6 @@ import { AccountPage } from './account.page';
     IonicModule,
     AccountPageRoutingModule
   ],
-  declarations: [AccountPage]
+  declarations: [AccountPage,ResetComponent,LoginComponent,RegistryComponent]
 })
 export class AccountPageModule {}
