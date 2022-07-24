@@ -1,0 +1,46 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-item lines="none">
+      <ion-buttons>
+        <ion-menu-button menu="main-menu"></ion-menu-button>
+      </ion-buttons>
+      <ion-title>Profile from {{profileName}}</ion-title>
+    </ion-item>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item>
+      <img src="../../../../assets/profile/markus.jpeg" alt="profile picture"/>
+    </ion-item>
+    <ion-item lines="full">
+      <ion-label>Account Visibility</ion-label>
+      <ion-checkbox></ion-checkbox>
+    </ion-item>
+    <ion-item lines="full">
+      <ion-label position="floating">Firstname</ion-label>
+      <ion-input type="text" required></ion-input>
+    </ion-item>
+    <ion-item lines="full">
+      <ion-label position="floating">Lastname</ion-label>
+      <ion-input type="text" required></ion-input>
+    </ion-item>
+    <ion-item lines="full">
+      <ion-label position="floating">Email</ion-label>
+      <ion-input type="text" required></ion-input>
+    </ion-item>
+    <ion-item lines="full">
+      <ion-label position="floating">Country</ion-label>
+      <ion-input type="text" required></ion-input>
+    </ion-item>
+    <ion-item lines="full">
+      <ion-label position="floating">Education level</ion-label>
+      <ion-input type="text" required></ion-input>
+    </ion-item>
+    <ion-item lines="full">
+      <ion-label position="floating">General Information</ion-label>
+      <ion-textarea type="text"></ion-textarea>
+    </ion-item>
+  </ion-list>
+</ion-content>
