@@ -4,7 +4,7 @@
       <ion-buttons>
         <ion-menu-button menu="main-menu"></ion-menu-button>
       </ion-buttons>
-      <ion-title>Profile from {{profileName}}</ion-title>
+      <ion-title>Profile from {{profile.email}}</ion-title>
     </ion-item>
   </ion-toolbar>
 </ion-header>
@@ -16,31 +16,37 @@
     </ion-item>
     <ion-item lines="full">
       <ion-label>Account Visibility</ion-label>
-      <ion-checkbox></ion-checkbox>
+      <ion-checkbox [(ngModel)]="profile.visibility"></ion-checkbox>
     </ion-item>
     <ion-item lines="full">
-      <ion-label position="floating">Firstname</ion-label>
-      <ion-input type="text" required></ion-input>
+      <ion-label position="stacked">Firstname</ion-label>
+      <ion-input type="text" required disabled="true">{{profile.firstName}}</ion-input>
     </ion-item>
     <ion-item lines="full">
-      <ion-label position="floating">Lastname</ion-label>
-      <ion-input type="text" required></ion-input>
+      <ion-label position="stacked">Lastname</ion-label>
+      <ion-input type="text" required disabled="true">{{profile.lastName}}</ion-input>
     </ion-item>
     <ion-item lines="full">
-      <ion-label position="floating">Email</ion-label>
-      <ion-input type="text" required></ion-input>
+      <ion-label position="stacked">Email</ion-label>
+      <ion-input type="text" required disabled="true">{{profile.email}}</ion-input>
     </ion-item>
     <ion-item lines="full">
-      <ion-label position="floating">Country</ion-label>
-      <ion-input type="text" required></ion-input>
+      <ion-label position="stacked">Country</ion-label>
+      <ion-input type="text" required disabled="true">{{profile.country}}</ion-input>
     </ion-item>
     <ion-item lines="full">
-      <ion-label position="floating">Education level</ion-label>
-      <ion-input type="text" required></ion-input>
+      <ion-label position="stacked">Education level</ion-label>
+      <ion-input type="text" required disabled="true">{{profile.educationLevel}}</ion-input>
     </ion-item>
     <ion-item lines="full">
-      <ion-label position="floating">General Information</ion-label>
-      <ion-textarea type="text"></ion-textarea>
+      <ion-label position="stacked">General Information</ion-label>
+      <ion-textarea type="text" disabled="true">{{profile.generalInfo}}</ion-textarea>
     </ion-item>
+    <ion-row>
+      <ion-col>
+        <ion-button type="submit" color="primary">Edit</ion-button>
+      </ion-col>
+    </ion-row>
   </ion-list>
+
 </ion-content>
