@@ -5,6 +5,7 @@ import {AccountPage} from './account.page';
 import {RegistryComponent} from './registry/registry.component';
 import {LoginComponent} from './login/login.component';
 import {ResetComponent} from './reset/reset.component';
+import {ProfileComponent} from './profile/profile.component';
 
 const routes: Routes = [
 
@@ -23,6 +24,11 @@ const routes: Routes = [
   {
     path: 'reset',
     component: ResetComponent
+  }
+  ,
+  {
+    path: 'profile',
+    component: ProfileComponent
   }
 ];
 
