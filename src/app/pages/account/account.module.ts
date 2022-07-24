@@ -10,6 +10,7 @@ import { AccountPage } from './account.page';
 import {ResetComponent} from './reset/reset.component';
 import {LoginComponent} from './login/login.component';
 import {RegistryComponent} from './registry/registry.component';
+import {ProfileComponent} from './profile/profile.component';
 
 @NgModule({
   imports: [
@@ -18,6 +19,6 @@ import {RegistryComponent} from './registry/registry.component';
     IonicModule,
     AccountPageRoutingModule
   ],
-  declarations: [AccountPage,ResetComponent,LoginComponent,RegistryComponent]
+  declarations: [AccountPage,ResetComponent,LoginComponent,RegistryComponent,ProfileComponent]
 })
 export class AccountPageModule {}
