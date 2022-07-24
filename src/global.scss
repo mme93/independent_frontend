@@ -30,7 +30,15 @@ ion-header {
     text-align: center;
   }
 }
-
+article{
+  h1,h2{
+    text-align: center;
+  }
+  p{
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+}
 
 .account{
   top: 30%;
