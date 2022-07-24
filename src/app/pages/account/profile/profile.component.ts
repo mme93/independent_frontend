@@ -15,5 +15,7 @@ export class ProfileComponent implements OnInit {
   ngOnInit() {
     this.profile=this.profileService.loadProfile();
   }
+  editProfile(){
 
+  }
 }
