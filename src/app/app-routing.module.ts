@@ -14,6 +14,10 @@ const routes: Routes = [
     path: 'account',
     loadChildren: () => import('./pages/account/account.module').then( m => m.AccountPageModule)
   },
+  {
+    path: 'founding',
+    loadChildren: () => import('./pages/founding/founding.module').then( m => m.FoundingPageModule)
+  },
 
 ];
 
